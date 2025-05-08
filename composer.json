@@ -1,0 +1,15 @@
+{
+    "name": "julio/my_portfolio",
+    "description": "A simple PHP application to show my background and learning PHP.",
+    "autoload": {
+        "psr-4": {
+            "Julio\\MyPortfolio\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jules"
+        }
+    ],
+    "require": {}
+}
