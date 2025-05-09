@@ -1,15 +1,16 @@
 <?php
-require__DIR__.'/../src/bootstrap.php';
+require __DIR__ . '/../src/bootstrap.php';
 
+// Simple router
 $request = $_SERVER['REQUEST_URI'];
 
 switch ($request) {
     case '/':
-    case '' :
-        require__DIR__.'/../src/Controllers/HomeController.php';
+    case '':
+        require __DIR__ . '/../src/Controllers/HomeController.php';
         break;
     default:
         http_response_code(404);
-        require__DIR__.'/../src/Views/404.php';
+        require __DIR__ . '/../src/Views/404.php';
         break;
 }
