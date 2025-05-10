@@ -4,41 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link href="assets/css/output.css" rel="stylesheet">
-    </head>
-<body class="bg-gray-100 font-sans leading-normal tracking-normal">
-    <div class="container mx-auto px-4 py-8">
-        <header class="mb-12 text-center">
-            <h1 class="text-5xl font-bold text-indigo-700 mb-4">Welcome to My Portfolio</h1>
-            <p class="text-xl text-gray-600">A showcase of my professional journey</p>
+    <link href="/assets/css/variables.css" rel="stylesheet">
+    <link href="/assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Welcome to My Portfolio</h1>
+            <p class="subtitle">A showcase of my professional journey</p>
         </header>
 
-        <section class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-semibold text-gray-800 mb-6">My Experiences</h2>
+        <section class="experiences-section">
+            <h2 class="section-title">My Experiences</h2>
             
-            <div class="space-y-8">
+            <div class="experiences-list">
                 <?php foreach ($experiences as $exp): ?>
-                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                    <div class="p-6">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <h3 class="text-2xl font-bold text-gray-800"><?= htmlspecialchars($exp['title']) ?></h3>
-                                <p class="text-indigo-600 font-medium"><?= htmlspecialchars($exp['company']) ?></p>
-                            </div>
-                            <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">
-                                <?= htmlspecialchars($exp['period']) ?>
-                            </span>
+                <div class="experience-card animate-on-scroll">
+                    <div class="experience-header">
+                        <div class="experience-titles">
+                            <h3 class="experience-title"><?= htmlspecialchars($exp['title']) ?></h3>
+                            <p class="experience-company"><?= htmlspecialchars($exp['company']) ?></p>
                         </div>
-                        
-                        <p class="mt-4 text-gray-600"><?= htmlspecialchars($exp['description']) ?></p>
-                        
-                        <div class="mt-4 flex flex-wrap gap-2">
-                            <?php foreach ($exp['skills'] as $skill): ?>
-                            <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">
-                                <?= htmlspecialchars($skill) ?>
-                            </span>
-                            <?php endforeach; ?>
-                        </div>
+                        <span class="experience-period"><?= htmlspecialchars($exp['period']) ?></span>
+                    </div>
+                    
+                    <p class="experience-description"><?= htmlspecialchars($exp['description']) ?></p>
+                    
+                    <div class="skills-list">
+                        <?php foreach ($exp['skills'] as $skill): ?>
+                        <span class="skill-item"><?= htmlspecialchars($skill) ?></span>
+                        <?php endforeach; ?>
                     </div>
                 </div>
                 <?php endforeach; ?>
@@ -46,6 +41,6 @@
         </section>
     </div>
 
-    <script src="assets/js/main.js"></script>
-    </body>
+    <script src="/assets/js/main.js"></script>
+</body>
 </html>

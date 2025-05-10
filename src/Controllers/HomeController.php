@@ -1,15 +1,17 @@
 <?php
 class HomeController {
-    public function index () {
+    public function index() {
         $experiences = [
             [
-            'titre' => 'Développeur web et mobile',
-            'Organisation' => 'indépendant',
-            'période' => '2024 à maintenant',
-            'Description' => 'Je conçois et développe des applications pour mon propre compte.',
-            'skills' => 'PHP, Laravel, React, Git, Java, Sprint boot, React native.'
-            ]
+                'title' => 'Web Developer',
+                'company' => 'independent',
+                'period' => '2024 - Present',
+                'description' => 'Developed modern web applications using PHP, Laravel, React and SpringBoot.',
+                'skills' => ['PHP', 'JavaScript', 'React', 'SpringBoot', 'React native', 'Tailwind CSS']
+            ],
+            // Add more experiences here
         ];
+        
         require __DIR__ . '/../Views/home.php';
     }
 }

@@ -1,0 +1,22 @@
+{
+  "name": "my_portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulesNyom/My_porftolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulesNyom/My_porftolio/issues"
+  },
+  "homepage": "https://github.com/JulesNyom/My_porftolio#readme",
+  "description": "",
+  "dependencies": {
+  }
+}
