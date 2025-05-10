@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #4f46e5;    /* Indigo */
-    --secondary-color: #6366f1;  /* Lighter indigo */
-    --background-color: #f8fafc;
-    --text-color: #1e293b;
-    --light-text-color: #64748b;
-    --card-bg: #ffffff;
-    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --primary-color: #818cf8;    /* Light indigo */
+    --secondary-color: #a5b4fc;  /* Pale indigo */
+    --background-color: #0f172a; /* Deep navy background */
+    --text-color: #f8fafc;       /* Bright white text */
+    --light-text-color: #94a3b8; /* Muted gray-blue */
+    --card-bg: #1e293b;          /* Dark slate cards */
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
 }
