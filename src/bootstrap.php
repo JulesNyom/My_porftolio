@@ -7,6 +7,3 @@ require __DIR__ . '/../vendor/autoload.php';
 
 // Start session if needed
 session_start();
-
-// Common functions and constants
-require __DIR__ . '/functions.php';
