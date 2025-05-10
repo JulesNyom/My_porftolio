@@ -1,5 +1,5 @@
 <?php
-class Homecontroller{
+class HomeController {
     public function index () {
         $experiences = [
             [
@@ -14,5 +14,6 @@ class Homecontroller{
     }
 }
 
-$controller = new Homecontroller();
+// Instantiate and call the controller
+$controller = new HomeController();
 $controller->index();
